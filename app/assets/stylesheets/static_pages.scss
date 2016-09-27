@@ -41,13 +41,13 @@ $blue: #4795D4;
 
 .categories {
   .laptop {
-    background-image: url("laptops.jpg");
+    background-image: img-url("laptops.jpg");
   }
   .smartphone {
-    background-image: url("smartphones.jpg");
+    background-image: img-url("smartphones.jpg");
   }
   .tablet {
-    background-image: url("tablet.jpg");
+    background-image: img-url("tablet.jpg");
   }
   .laptop, .smartphone, .tablet {
     background-repeat:no-repeat;
