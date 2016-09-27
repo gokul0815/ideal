@@ -41,10 +41,33 @@ $blue: #4795D4;
 
 .categories {
   .laptop {
+    background-image: url("laptops.jpg");
+  }
+  .smartphone {
+    background-image: url("smartphones.jpg");
+  }
+  .tablet {
+    background-image: url("tablet.jpg");
+  }
+  .laptop, .smartphone, .tablet {
+    background-repeat:no-repeat;
+    -webkit-background-size:cover;
+    -moz-background-size:cover;
+    -o-background-size:cover;
+    background-size:cover;
+    background-position:center;
     .text {
-      margin: 100px 0 100px 100px;
+      text-align: center;
+      padding: 200px 0 200px 0;
       h1 {
+        // padding-bottom: 100px;
         font-weight: 700;
+      }
+      a {
+        color: $black;
+        &:hover {
+          color: $black;
+        }
       }
     }
   }
