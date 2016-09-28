@@ -1,3 +1,54 @@
-// Place all the styles related to the Products controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+// Variables
+$black: #222222;
+$white: #F3F3F3;
+$blue: #4795D4;
+$yellow: #FFC741;
+
+
+// Products index page
+.products {
+  width: 100%;
+  overflow: hidden;
+  .img {
+    height: auto;
+    overflow: hidden;
+  }
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+  h1 {
+    font-weight: 700;
+    color: $white;
+    font-size: 1.6em;
+    padding: 25px 0 25px 25px;
+    background: $yellow;
+    margin: 0;
+  }
+  h2 {
+    font-size: 2em;
+    a {
+      color: $blue;
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+  .product {
+    text-align: center;
+    padding: 25px 0 25px 0;
+    margin: 25px 0 25px 0;
+    border: 1px solid transparent;
+    &:hover {
+      transition: box-shadow 0.5s ease;
+      -webkit-box-shadow: 0px -1px 41px 3px rgba(0,0,0,0.12);
+      -moz-box-shadow: 0px -1px 41px 3px rgba(0,0,0,0.12);
+      box-shadow: 0px -1px 41px 3px rgba(0,0,0,0.12);
+    }
+  }
+}
+
+// Media queries
+// @media (min-width: @screen-sm-min) and (max-width: @screen-sm-max) {
+//
+// }
