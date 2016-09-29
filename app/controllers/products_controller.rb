@@ -1,5 +1,6 @@
 class ProductsController < ApplicationController
   before_action :set_product, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:new, :edit, :destroy]
 
   def index
     @products = Product.all
@@ -10,9 +11,6 @@ class ProductsController < ApplicationController
 
   def new
     @product = Product.new
-  end
-
-  def edit
   end
 
   def create
@@ -27,6 +25,9 @@ class ProductsController < ApplicationController
         format.json { render json: @product.errors, status: :unprocessable_entity }
       end
     end
+  end
+
+  def edit
   end
 
   def update
